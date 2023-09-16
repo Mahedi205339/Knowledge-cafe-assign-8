@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import {FaBook ,FaDollarSign } from "react-icons/fa";
-const Course = ({ course }) => {
+const Course = ({ course ,handleAddToCreditData}) => {
     const { title, cover, description, price, credit } = course
     return (
         <div className='w-[300px]'>
@@ -11,12 +11,13 @@ const Course = ({ course }) => {
                 <p className='flex gap-2 items-center'><FaDollarSign></FaDollarSign> Price :${price}</p>
                 <p className='flex gap-2 items-center'><FaBook ></FaBook >  Credit :{credit}hr</p>
             </div>
-            <button className='w-[300px] text-white bg-[#2F80ED] h-10 rounded-lg hover:bg-white hover:text-[#2F80ED] font-semibold'>Select</button>
+            <button onClick={()=>handleAddToCreditData(course)} className='w-[300px] text-white bg-[#2F80ED] h-10 rounded-lg hover:bg-white hover:text-[#2F80ED] font-semibold'>Select</button>
         </div>
     );
 };
 
 Course.propTypes = {
-    course: PropTypes.object.isRequired
+    course: PropTypes.object.isRequired,
+    handleAddToCreditData:PropTypes.func
 }
 export default Course;
