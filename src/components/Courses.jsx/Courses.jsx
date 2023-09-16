@@ -12,7 +12,6 @@ const Courses = ({ handleAddToCreditData, handleReadingHour }) => {
     return (
 
         <div className="w-3/4">
-            <h1>Courses :{courses.length}</h1>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 md:gap-5 lg:gap-10">
                 {
                     courses.map(course => <Course
