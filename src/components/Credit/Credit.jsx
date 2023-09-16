@@ -4,7 +4,7 @@ const Credit = ({ credit }) => {
     return (
         <div>
             <div className='bg-slate-200 p-2 rounded-xl'>
-                <h4>Course Name:{title}</h4>
+                <li className='list-disc'>Course Name:{title}</li>
             </div>
         </div>
     );
