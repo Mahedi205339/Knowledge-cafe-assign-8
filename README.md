@@ -1,8 +1,10 @@
-# React + Vite
+Three features of this projects 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1 . This project contain fresh codding ;
+2. This project's conditions are so effective and meaningful
+3 . This project has responsiveness for mobile ,tablet and large devices ;
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Discussion how I managed the state my assignment project 
+
+I managed my project state so clearly . every condition or storing data I have use specific state . 
