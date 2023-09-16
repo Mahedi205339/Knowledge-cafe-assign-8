@@ -11,7 +11,7 @@ function App() {
 
   const [creditData, setCreditData] = useState([]);
   const [readingHour, setReadingHour] = useState(0)
-  const [remaining, setRemaining] = useState(0)
+  const [remaining, setRemaining] = useState(20)
   const [totalPrice, setTotalPrice] = useState(0)
   const handleReadingHour = (time) => {
     setReadingHour(time + readingHour)
