@@ -1,0 +1,21 @@
+import PropTypes from 'prop-types'
+const Course = ({ course }) => {
+    const { title, cover, description, price, credit } = course
+    return (
+        <div className='w-[300px]'>
+            <img className='w-[300px]' src={cover} alt={`cover picture of the title ${title}`} />
+            <h2 className='text-xl font-semibold my-3'>{title}</h2>
+            <p className=' text-sm text-gray-500'>{description}</p>
+            <div className='flex justify-between items-center my-4 text-gray-500'>
+                <p>Price :${price}</p>
+                <p>Credit :{credit}hr</p>
+            </div>
+            <button className='w-[300px] text-white bg-[#2F80ED] h-10 rounded-lg hover:bg-white hover:text-[#2F80ED] font-semibold'>Select</button>
+        </div>
+    );
+};
+
+Course.propTypes = {
+    course: PropTypes.object.isRequired
+}
+export default Course;
